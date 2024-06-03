@@ -34,14 +34,17 @@ function init(){
     winner = false; //this will have to be false = beggining of the game. If the premise was true then this would mean the game was already played and there is a winner 
     tie = false; //same theory applies - if tie = false then this would be an end of a game. 
 
-
 render();
-console.log
-
 
 }
 
 //4) The state of the game should be rendered to the user.
+function render(){
+}
+
+
+function updateBoard(){
+}
 
 
 //7) Create Reset functionality.
