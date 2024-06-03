@@ -1,20 +1,27 @@
+console.log('am i working?')
 
 /*-------------------------------- Constants --------------------------------*/
 //5) Define the required constants.
 
+const choices =['X', 'O']
 
 /*---------------------------- Variables (state) ----------------------------*/
 //1) Define the required variables used to track the state of the game.
 
-let board
-let turn
-let winner
-let tie
+let board;
+let turn;
+let winner;
+let tie;
 
 
 /*------------------------ Cached Element References ------------------------*/
 //2) Store cached element references.
 
+const squareEls = document.querySelectorAll('square')
+const messageEl = document.querySelectorAll('gamestatus')
+
+console.log(squareEls)
+console.log (messageEl)
 
 /*-------------------------------- Functions --------------------------------*/
 //3) Upon loading, the game state should be initialized, and a function should 
