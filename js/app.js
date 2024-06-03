@@ -40,6 +40,8 @@ render();
 
 //4) The state of the game should be rendered to the user.
 function render(){
+    updateBoard()
+    updateMessage()
 }
 
 
@@ -56,10 +58,19 @@ function updateMessage(){
     } else if (winner === false || tie === true){
         messageEl.textContent `It's a tie`
     } else {
-        messageEl.textContent '${turn} wins! Congratulations!'
+        messageEl.textContent `${turn} wins! Congratulations!`
     }
 
 }
+
+// strategically do by row, column and diagional across
+const winningCombos =[
+    [0,1,2], [3,4,5],[6,7,8], //row
+    [0,3,6], [1,4,7], [2,5,8] //column
+    [0,4,8], [2,4,6] //diagonal across
+]
+
+)
 //7) Create Reset functionality.
 
 
