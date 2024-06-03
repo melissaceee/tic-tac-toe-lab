@@ -44,9 +44,22 @@ function render(){
 
 
 function updateBoard(){
+    board.forEach((value, idx) => {
+        squareEls[idx].textContent = value
+    })
 }
 
+// ! (logical not operator) will check the negation of a value
+function updateMessage(){
+    if (winner && tie === false) {
+        messageEl.textContent `It's ${turn}'s turn`
+    } else if (winner === false || tie === true){
+        messageEl.textContent `It's a tie`
+    } else {
+        messageEl.textContent '${turn} wins! Congratulations!'
+    }
 
+}
 //7) Create Reset functionality.
 
 
